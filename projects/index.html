@@ -79,10 +79,44 @@
         <div class="project-card" style="flex: 0 0 auto; max-width: 100%;">
           <a href="https://github.com/RachaellNihalaani/SlicePropUQ">
             <div class="card">
-              <img class="card-img-top" src="../assets/img/SLiver07_Vol02.gif" alt="project thumbnail" />
+              <img class="card-img-top" src="../assets/img/pub-and-proj/segpropUQ-example.gif" alt="project thumbnail" />
               <div class="card-body">
                 <h5 class="card-title">Estimation and Analysis of Slice Propagation Uncertainty in 3D Anatomy Segmentation</h5>
-                <p class="card-text">Proposed the integration of calibrated uncertainty quantification (UQ) into slice propagation methods, providing insights into the model's predictive reliability and confidence levels. Incorporating uncertainty measures enhances user confidence in self-supervised approaches, thereby improving their practical applicability.</p>
+                <p class="card-text">Proposed the integration of calibrated uncertainty quantification (UQ) into self-supervised segmentation (slice propagation) methods. Incorporating uncertainty measures enhanced model's predictive reliability and user confidence in self-supervised approaches, thereby improving their practical applicability.</p>
+                
+                <div class="col p-0">
+                  <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#segpropuq-contr" role="button" aria-expanded="false" aria-controls="segpropuq-contr">Contributors</a>  
+                  <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#segpropuq-keyword" role="button" aria-expanded="false" aria-controls="segpropuq-keyword">Keywords</a>
+                  <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#segpropuq-abs" role="button" aria-expanded="false" aria-controls="segpropuq-abs">Abstract</a>
+                  <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#segpropuq-uq" role="button" aria-expanded="false" aria-controls="segpropuq-uq">UQ methods</a>
+                  <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/SegPropUQ/2403.12290.pdf" target="_blank">PDF</a>
+                  <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/abs/2403.12290" target="_blank">arXiv</a>
+                  <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/SlicePropUQ" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
+                </div>
+
+                <div class="col mt-2 p-0">
+                    <div id="segpropuq-keyword" class="collapse">
+                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                        3D Segmentation, Slice Propagation, Uncertainty Quantification
+                      </div>
+                    </div>
+                  </div>
+                <div class="col mt-2 p-0">
+                    <div id="segpropuq-uq" class="collapse">
+                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                        Deep Ensemble<br />Batch Ensemble<br />Monte Carlo Dropout<br />Concrete Dropout<br />Stochastic Weighted Averaging Gaussian (SWAG)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mt-2 p-0">
+                    <div id="segpropuq-abs" class="collapse">
+                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                        Supervised methods for 3D anatomy segmentation demonstrate superior performance but are often limited by the availability of annotated data. This limitation has led to a growing interest in self-supervised approaches in tandem with the abundance of available un-annotated data. Slice propagation has emerged as an self-supervised approach that leverages slice registration as a self-supervised task to achieve full anatomy segmentation with minimal supervision. This approach significantly reduces the need for domain expertise, time, and the cost associated with building fully annotated datasets required for training segmentation networks. However, this shift toward reduced supervision via deterministic networks raises concerns about the trustworthiness and reliability of predictions, especially when compared with more accurate supervised approaches. To address this concern, we propose the integration of calibrated uncertainty quantification (UQ) into slice propagation methods, providing insights into the model's predictive reliability and confidence levels. Incorporating uncertainty measures enhances user confidence in self-supervised approaches, thereby improving their practical applicability. We conducted experiments on three datasets for 3D abdominal segmentation using five UQ methods. The results illustrate that incorporating UQ improves not only model trustworthiness, but also segmentation accuracy. Furthermore, our analysis reveals various failure modes of slice propagation methods that might not be immediately apparent to end-users. This study opens up new research avenues to improve the accuracy and trustworthiness of slice propagation methods.
+                      </div>
+                    </div>
+                  </div>
+
+                
                 <div class="row ml-1 mr-1 p-0">
                 </div>
               </div>
