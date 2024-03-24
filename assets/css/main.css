@@ -11218,7 +11218,9 @@ progress { position: fixed; left: 0; top: 56px; z-index: 10; width: 100%; height
 .news .text p, .news .text a { padding-left: .2em; }
 
 /* Projects */
-.project-card { position: relative; width: 50%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; }
+.project-card-100 { position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; }
+.project-card-50 { position: relative; width: 50%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; }
+
 @media (min-width: 576px) { .project-card { flex: 0 0 100%; max-width: 100%; } }
 @media (min-width: 768px) { .project-card { flex: 0 0 50%; max-width: 50%; } }
 .project-card .card { transition: all 0.2s ease-in-out; margin-bottom: 1.5rem; padding: 0; }
