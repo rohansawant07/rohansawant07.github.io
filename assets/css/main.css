@@ -11218,12 +11218,12 @@ progress { position: fixed; left: 0; top: 56px; z-index: 10; width: 100%; height
 .news .text p, .news .text a { padding-left: .2em; }
 
 /* Projects */
-.project-card { display:flex; position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; }
+.project-card { display:flex; flex-direction: column; position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; overflow: auto; z-index:1;}
 
 @media (min-width: 576px) { .project-card { flex: 0 0 100%; max-width: 100%; } }
 @media (min-width: 768px) { .project-card { flex: 0 0 100%; max-width: 100%; } }
-.project-card .card { transition: all 0.2s ease-in-out; margin-bottom: 1.5rem; padding: 0; overflow: visible !important; }
-.project-card .collapse {overflow: visible !important; z-index: auto !important; position: relative !important;}
+.project-card .card { transition: all 0.2s ease-in-out; margin-bottom: 1.5rem; padding: 0; overflow: visible !important; flex-grow:1;}
+.project-card .collapse.show {overflow: visible !important; z-index: auto !important; position: relative !important; z-index:2;}
 .project-card .card:hover { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); transition: all 0.2s ease-in-out; }
 .project-card .wordpress-icon { display: block; font-size: 40px; margin-bottom: -0.3em; margin-top: 0.5rem; margin-left: -0.25rem; margin-right: 0.5rem; padding: 0; }
 .project-card .wordpress-icon .icon { margin-right: 0.25rem; }
