@@ -1,6 +1,6 @@
-# Rachaell Nihalaani's personal webpage
+# Rohan Sawant's personal webpage
 
-This is the personal website of Rachaell Nihalaani, which can be visualized at [https://rachaellnihalaani.github.io/](https://rachaellnihalaani.github.io/).
+This is the personal website of Rohan Sawant, which can be visualized at [https://rohansawant07.github.io/](https://rohansawant07.github.io/).
 
 ## How to use this template for your website
 
