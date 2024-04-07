@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Rachaell Nihalaani | publications</title>
-    <meta name="description" content="This is the personal website of Rachaell Nihalaani">
+    <title>Rohan Sawant | publications</title>
 
     <!-- Fonts and Icons -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
@@ -20,7 +19,7 @@
     <!-- Header -->
       <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
         <div class="container-fluid p-0">
-          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Rachaell</span> Nihalaani</a>
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Rohan</span> Sawant</a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -95,14 +94,13 @@
               </div>
               <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
                 <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Estimation and Analysis of Slice Propagation Uncertainty in 3D Anatomy Segmentation</h5>
+                  <h5 class="title mb-0">Syn-QA2: Evaluating False Assumptions in Long-tail Questions with Synthetic QA Datasets</h5>
                     
                   <! AUTHOR LIST>
                   <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em>,</nobr>
-                    <nobr><a href="https://tushaarkataria.github.io/" target="_blank">Tushar Kataria</a>,</nobr>
-                    <nobr><a href="https://sci.utah.edu/~jadie/" target="_blank">Jadie Adams</a>, and</nobr>
-                    <nobr><a href="http://www.sci.utah.edu/~shireen/" target="_blank">Shireen Elhabian</a>.</nobr>
+                    <nobr><em>Rohan Sawant</em>*,</nobr>
+                    <nobr><a href="https://www.linkedin.com/in/ashwindaswani/" target="_blank">Ashwin Daswani</a>*, and</nobr>
+                    <nobr><a href="https://najoung.kim/" target="_blank">Najoung Kim</a>.</nobr>
                   </div>
     
                   <! CONFERENCE NAME>
@@ -114,24 +112,16 @@
     
                   <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
                   <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#segpropuq-keywords" role="button" aria-expanded="false" aria-controls="segpropuq-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#segpropuq-abstract" role="button" aria-expanded="false" aria-controls="segpropuq-abstract">Abstract</a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#QA-abstract" role="button" aria-expanded="false" aria-controls="QA-abstract">Abstract</a>
                     <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/SegPropUQ/2403.12290.pdf" target="_blank">PDF</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/abs/2403.12290" target="_blank">arXiv</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/SlicePropUQ" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/abs/2403.12145" target="_blank">arXiv</a>
+                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/ashwindaswanibu/QAQA-Synthetic-Dataset" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
                   </div>
                   
                   <div class="col mt-2 p-0">
-                    <div id="segpropuq-keywords" class="collapse">
+                    <div id="QA-abstract" class="collapse">
                       <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        3D Segmentation, Slice Propagation, Uncertainty Quantification
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="segpropuq-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Supervised methods for 3D anatomy segmentation demonstrate superior performance but are often limited by the availability of annotated data. This limitation has led to a growing interest in self-supervised approaches in tandem with the abundance of available un-annotated data. Slice propagation has emerged as an self-supervised approach that leverages slice registration as a self-supervised task to achieve full anatomy segmentation with minimal supervision. This approach significantly reduces the need for domain expertise, time, and the cost associated with building fully annotated datasets required for training segmentation networks. However, this shift toward reduced supervision via deterministic networks raises concerns about the trustworthiness and reliability of predictions, especially when compared with more accurate supervised approaches. To address this concern, we propose the integration of calibrated uncertainty quantification (UQ) into slice propagation methods, providing insights into the model's predictive reliability and confidence levels. Incorporating uncertainty measures enhances user confidence in self-supervised approaches, thereby improving their practical applicability. We conducted experiments on three datasets for 3D abdominal segmentation using five UQ methods. The results illustrate that incorporating UQ improves not only model trustworthiness, but also segmentation accuracy. Furthermore, our analysis reveals various failure modes of slice propagation methods that might not be immediately apparent to end-users. This study opens up new research avenues to improve the accuracy and trustworthiness of slice propagation methods.
+                        Sensitivity to false assumptions (or false premises) in information-seeking questions is critical for robust question-answering (QA) systems. Recent work has shown that false assumptions in naturally occurring questions pose challenges to current models, with low performance on both generative QA and simple detection tasks (Kim et al., 2023). However, the focus of existing work on naturally occurring questions leads to a gap in the analysis of model behavior on the long tail of the distribution of possible questions. To this end, we introduce Syn-(QA)2, a set of two synthetically generated QA datasets: one generated using perturbed relations from Wikidata, and the other by perturbing HotpotQA (Yang et al., 2018). Our findings from evaluating a range of large language models are threefold: (1) false assumptions in QA are challenging, echoing the findings of prior work, (2) the binary detection task is challenging even compared to the difficulty of generative QA itself, possibly due to the linguistic structure of the problem, and (3) the detection task is more challenging with long-tail questions compared to naturally occurring questions, highlighting the utility of our synthetic datasets and generation method.
                       </div>
                     </div>
                   </div>
@@ -153,332 +143,7 @@
         
         <div class="col-sm-11 p-0">
           
-          
           <ol class="bibliography">
-            <li>
-            <div class="row m-0 mt-3 p-0">
-              <div class="col-sm-1 p-0 abbr">
-                <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">
-                  IEEE
-                </a>
-              </div>
-              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Movie Success Prediction Using Naïve Bayes, Logistic Regression and Support Vector Machine</h5>
-                    
-                  <! AUTHOR LIST>
-                  <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em>*,</nobr>
-                    <nobr><a href="https://www.linkedin.com/in/apoorva-shete/" target="_blank">Apoorva Shete</a>*, and</nobr>
-                    <nobr><a href="https://tsec.edu/wp-content/uploads/2023/08/23_Darakhshan_Khan-Darakshan-Khan.pdf" target="_blank">Darakhshan Khan</a>.</nobr>
-                  </div>
-    
-                  <! CONFERENCE NAME>
-                  <div>
-                    <p class="periodical font-italic">
-                      Presented at IEEE 2021 9th International Conference on Reliability, Infocom Technologies and Optimization (ICRITO) (Trends and Future Directions).
-                    </p>
-                  </div>
-    
-                  <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
-                  <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#movie-keywords" role="button" aria-expanded="false" aria-controls="movie-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#movie-abstract" role="button" aria-expanded="false" aria-controls="movie-abstract">Abstract</a>
-
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://ieeexplore.ieee.org/document/9596138" target="_blank">IEEE</a>
-
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/movie-success/Movie_Success_Prediction_Using_Nave_Bayes_Logistic_Regression_and_Support_Vector_Machine.pdf" target="_blank">PDF</a>
-
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/movie-success/IEEE ICRITO 2021 Paper Id 564 Presentation.pdf" target="_blank">Presentation</a>
-                    
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
-                    
-                  </div>
-
-                  <div class="col mt-2 p-0">
-                    <div id="movie-keywords" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Machine Learning, Prediction Model, Movie Success Prediction, Support Vector Machine, Naive Bayes, Logistic Regression
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="movie-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        The entertainment industry is a rapidly growing billion-dollar industry. With new milestones being reached almost every day, this industry has proved itself to be a very profitable business, if done correctly. Since huge investments are involved in the production and making of movies, both in terms of time and money, it would only make sense to try to predict the outcome beforehand. In an attempt to tackle this problem, we have built a model that predicts whether or not a movie can be called a success. The model compares the performance of three machine learning algorithms i.e. Naive Bayes, Logistic Regression, and Support Vector Machine (SVM), over two different datasets, to observe which performs better. We have illustrated the model, as well as its results, findings, and observations in this literature.
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-              
-          </div>
-        </li>
-        
-        <li>
-            <div class="row m-0 mt-3 p-0">
-              <div class="col-sm-1 p-0 abbr">
-                <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.ijcaonline.org" target="_blank">
-                  IJCA
-                </a>
-              </div>
-              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Approach to Prediction of Unmasked Face from Masked Face using Deep Learning</h5>
-                    
-                  <! AUTHOR LIST>
-                  <div class="author">
-                    <nobr><a href="https://www.linkedin.com/in/apoorva-shete/" target="_blank">Apoorva Shete</a>*,</nobr>
-                    <nobr><em>Rachaell Nihalaani</em>*, and</nobr>
-                    <nobr><a href="https://www.linkedin.com/in/amit-hatekar-2699793a/?originalSubdomain=in" target="_blank">Amit Hatekar</a>.</nobr>
-                  </div>
-    
-                  <! CONFERENCE NAME>
-                  <div>
-                    <p class="periodical font-italic">
-                      Accepted in the International Journal of Computer Applications (IJCA) November 2021 Edition.
-                    </p>
-                  </div>
-    
-                  <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
-                  <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#unmasked-keywords" role="button" aria-expanded="false" aria-controls="unmasked-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#unmasked-abstract" role="button" aria-expanded="false" aria-controls="unmasked-abstract">Abstract</a>
-
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.ijcaonline.org/archives/volume183/number36/32162-2021921745/" target="_blank">IJCA</a>
-
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/unmasked/Unmasked-from-Masked.pdf" target="_blank">PDF</a>
-                    
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
-                    
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="unmasked-keywords" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Machine Learning, Deep Learning, Autoencoders, Face Mask, Unmasking
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="unmasked-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Due to the outbreak of COVID-19, it has become mandatory for each and every person to step outside only with a face mask on. This has raised the security and safety concerns among people as faces of criminals, burglars, etc are not recognisable through the CCTVs and security cameras. This problem can be tackled with the help of deep learning. In this paper, a model that can predict the unmasked face of a person from a masked face input image, giving an unmasked face image as the output was implemented. The accuracy achieved by the model is 91%. This paper ends with a review of the model‟s usefulness and its scope for further development and improved results in the future.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </li>
-
-        <li>
-            <div class="row m-0 mt-3 p-0">
-              <div class="col-sm-1 p-0 abbr">
-                <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.ijraset.com" target="_blank">
-                  IJRASET
-                </a>
-              </div>
-              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Using Machine Learning to Classify Music Genre</h5>
-                    
-                  <! AUTHOR LIST>
-                  <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em></nobr>
-                  </div>
-    
-                  <! CONFERENCE NAME>
-                  <div>
-                    <p class="periodical font-italic">
-                      Published in IJRASET Volume 9 Issue X October 2021.
-                    </p>
-                  </div>
-    
-                  <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
-                  <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#musicgenre-keywords" role="button" aria-expanded="false" aria-controls="musicgenre-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#musicgenre-abstract" role="button" aria-expanded="false" aria-controls="musicgenre-abstract">Abstract</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.ijraset.com/fileserve.php?FID=38365" target="_blank">IJRASET</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/music-genre/Music-Genre-Classification.pdf" target="_blank">PDF</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
-                    
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="musicgenre-keywords" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Machine Learning, Music Genre Classification, Decision Trees, K Nearest Neighbours, Logistic regression, Naïve Bayes, Neural Networks, Random Forest, Support Vector Machine, XGBoost
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="musicgenre-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        As Plato once rightfully said, ‘Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.’ Music has always been an important art form, and more so in today’s science-driven world. Music genre classification paves the way for other applications such as music recommender models. Several approaches could be used to classify music genres. In this literature, we aimed to build a machine learning model to classify the genre of an input audio file using 8 machine learning algorithms and determine which algorithm is the best suitable for genre classification. We have obtained an accuracy of 91% using the XGBoost algorithm.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </li>
-
-            <li>
-            <div class="row m-0 mt-3 p-0">
-              <div class="col-sm-1 p-0 abbr">
-                <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.ijraset.com" target="_blank">
-                  IJRASET
-                </a>
-              </div>
-              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Sign Language Interpreter using Deep Learning</h5>
-                    
-                  <! AUTHOR LIST>
-                  <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em>*, </nobr>
-                    <nobr><a href="https://www.linkedin.com/in/apoorva-shete/" target="_blank">Apoorva Shete</a>*, and</nobr>
-                    <nobr><a href="https://www.linkedin.com/in/vaibhav-ambhire-56592129/?originalSubdomain=in" target="_blank">Vaibhav Ambhire</a>.</nobr>
-                  </div>
-    
-                  <! CONFERENCE NAME>
-                  <div>
-                    <p class="periodical font-italic">
-                      Published in IJRASET Volume 9 Issue IX September 2021. 
-                    </p>
-                  </div>
-    
-                  <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
-                  <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#signlang-keywords" role="button" aria-expanded="false" aria-controls="signlang-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#signlang-abstract" role="button" aria-expanded="false" aria-controls="signlang-abstract">Abstract</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.ijraset.com/fileserve.php?FID=38308" target="_blank">IJRASET</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/sign-language/Sign-Language-Interpreter.pdf" target="_blank">PDF</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
-                    
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="signlang-keywords" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Sign Language, Machine Learning, Interpretation model, Convoluted Neural Networks, American Sign Language
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="signlang-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Sign Language is invaluable to hearing and speaking impaired people and is their only way of communicating among themselves. However, it has limitations with its reach as the rest of the people have no information regarding sign language interpretation. Sign language is communicated via hand gestures and visual modes and is therefore used by hearing and speaking impaired people to intercommunicate. These languages have alphabets and grammar of their own, which cannot be understood by people who have no knowledge about the specific symbols and rules. Thus, it has become essential for everyone to interpret, understand and communicate via sign language to overcome and alleviate the barriers of speech and communication. This can be tackled  with the help of machine learning. This model is a Sign Language Interpreter that uses a dataset of images and interprets the sign language alphabets and sentences with 90.9% accuracy. For this paper, we have used an ASL (American Sign Language) Alphabet. We have used the CNN algorithm for this project. This paper ends with a summary of the model’s viability and its usefulness for interpretation of Sign Language. 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </li>
-
-            <li>
-            <div class="row m-0 mt-3 p-0">
-              <div class="col-sm-1 p-0 abbr">
-                <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.ijraset.com" target="_blank">
-                  IJRASET
-                </a>
-              </div>
-              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Image Colorization using Autoencoders</h5>
-                    
-                  <! AUTHOR LIST>
-                  <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em>*, </nobr>
-                    <nobr><a href="https://smansha1.wixsite.com/simranmansharamani" target="_blank">Simran Mansharamani</a>*, and</nobr>
-                    <nobr><a href="https://scholar.google.co.in/citations?user=HwShIH4AAAAJ&hl=en" target="_blank">Juhi Janjua</a>.</nobr>
-                  </div>
-    
-                  <! CONFERENCE NAME>
-                  <div>
-                    <p class="periodical font-italic">
-                      Published in IJRASET Volume 9 Issue IX September 2021. 
-                    </p>
-                  </div>
-    
-                  <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
-                  <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#imagecolor-keywords" role="button" aria-expanded="false" aria-controls="imagecolor-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#imagecolor-abstract" role="button" aria-expanded="false" aria-controls="imagecolor-abstract">Abstract</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.ijraset.com/fileserve.php?FID=38218" target="_blank">IJRASET</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/image-colorization/Image-Colorization.pdf" target="_blank">PDF</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
-                    
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="imagecolor-keywords" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Deep Learning, Convolutional Neural Network, Image Colorization, Autoencoders
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="imagecolor-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Modification of art may be viewed as enhancement or vandalization. Even though for a long time many were opposed to the idea of colorizing images, they now have finally viewed it for what it is - an enhancement of the art form. Grayscale image colorization has since been a long-standing artistic division. It has been used to revive or modify images taken prior to the invention of colour photography. This paper explores one method to reinvigorate grayscale images by colorizing them. We propose the use of deep learning, specifically the use of convolution neural networks. The obtained results show the ability of our model to realistically colorize grayscale images.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </li>
-
-        <li>
-            <div class="row m-0 mt-3 p-0">
-              <div class="col-sm-1 p-0 abbr">
-                <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px;" href="https://www.ijraset.com" target="_blank">
-                  IJRASET
-                </a>
-              </div>
-              <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-                <div id="scaling_up_llm" class="col p-0">
-                  <h5 class="title mb-0">Heart Failure Prognostication using Boosting Algorithms</h5>
-                    
-                  <! AUTHOR LIST>
-                  <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em>*, </nobr>
-                    <nobr><a href="https://smansha1.wixsite.com/simranmansharamani" target="_blank">Simran Mansharamani</a>*, and</nobr>
-                    <nobr><a href="https://scholar.google.co.in/citations?user=HwShIH4AAAAJ&hl=en" target="_blank">Juhi Janjua</a>.</nobr>
-                  </div>
-    
-                  <! CONFERENCE NAME>
-                  <div>
-                    <p class="periodical font-italic">
-                      Published in IJRASET Volume 9 Issue VI June 2021. 
-                    </p>
-                  </div>
-    
-                  <! ABSTRACT or PDF or Code or ArXiV or POSTER or VIDEO or SUPPLEMENTARY>
-                  <div class="col p-0">
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#heartfailure-keywords" role="button" aria-expanded="false" aria-controls="heartfailure-keywords">Keywords</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#heartfailure-abstract" role="button" aria-expanded="false" aria-controls="heartfailure-abstract">Abstract</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.ijraset.com/fileserve.php?FID=35336" target="_blank">IJRASET</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="../assets/pdf/heart-failure/Heart-Failure-Prognostication.pdf" target="_blank">PDF</a>
-                    <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/RachaellNihalaani/" target="_blank"><i class="fa-brands fa-square-github fa-xl faa-pulse animated-hover" style="color: #000000;"></i></a>
-                    
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="heartfailure-keywords" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        Machine Learning, Binary Classification, Boosting Algorithm, Gradient boosting, XGBoost, AdaBoost, CatBoost
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mt-2 p-0">
-                    <div id="heartfailure-abstract" class="collapse">
-                      <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                        In the medical field, predicting a heart disease has become a very complicated and challenging task. So, in this contemporary lifestyle, there is an urgent need for a system that will help predict accurately the possibility of getting heart disease. This paper presents an observation-based comparison between four boosting algorithms namely Gradient boosting, XGBoost, ADAboost and CatBoost to predict heart failure efficiently. To do so, we have referred to the PLOS (Public Library of Science) Repository dataset. These algorithm’s performances have been evaluated using metrics like Accuracy, F1 score, Recall and many more. All values obtained ensured the superiority of these boosting algorithms based on several performance measures.
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </li>
 
         <li>
             <div class="row m-0 mt-3 p-0">
@@ -493,8 +158,8 @@
                     
                   <! AUTHOR LIST>
                   <div class="author">
-                    <nobr><em>Rachaell Nihalaani</em>*, </nobr>
-                    <nobr><a href="https://www.linkedin.com/in/rohansawant07/" target="_blank">Rohan Sawant</a>*, and</nobr>
+                    <nobr><em>Rohan Sawant</em>*, </nobr>
+                    <nobr><a href="https://rachaellnihalaani.github.io/" target="_blank">Rachaell Nihalaani</a>*, and</nobr>
                     <nobr><a href="https://scholar.google.co.in/citations?user=HwShIH4AAAAJ&hl=en" target="_blank">Juhi Janjua</a>.</nobr>
                   </div>
     
