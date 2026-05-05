@@ -1041,9 +1041,9 @@
 <nav class="dock">
   <a href="#" class="dock-logo"><span class="pulse"></span>rohan.sawant</a>
   <a href="#work" class="lnk">work</a>
+  <a href="#binge" class="lnk">binge</a>
   <a href="#projects" class="lnk">projects</a>
   <a href="#stack" class="lnk">stack</a>
-  <a href="#updates" class="lnk">updates</a>
   <a href="mailto:rohsaw404@gmail.com" class="dock-cta keep">contact <i class="fa-solid fa-arrow-right"></i></a>
 </nav>
 
@@ -1159,6 +1159,370 @@
     </div>
   </div>
 </section>
+
+<!-- BINGE SPOTLIGHT -->
+<section id="binge" class="container reveal">
+  <div class="binge-card">
+    <div class="binge-bg"></div>
+    <div class="binge-grid">
+      <div class="binge-copy">
+        <div class="binge-eyebrow">
+          <span class="binge-dot"></span> live · ios app
+        </div>
+        <h2 class="binge-title">Binge<span class="binge-dot-end">.</span></h2>
+        <p class="binge-tag">AI movie &amp; TV discovery, powered by mood.</p>
+        <p class="binge-desc">
+          A 5-stage <strong>agentic RAG pipeline</strong> classifies your vibe and surfaces films and shows that actually resonate. Built solo — from system design to App Store. <strong>100+ active users</strong>, 70+ async FastAPI endpoints, country-aware content, GPT-4o-mini ranking.
+        </p>
+        <div class="binge-tags">
+          <span class="binge-pill">FastAPI</span>
+          <span class="binge-pill">GPT-4o-mini</span>
+          <span class="binge-pill">ChromaDB</span>
+          <span class="binge-pill">iOS</span>
+          <span class="binge-pill">Firebase</span>
+        </div>
+        <div class="binge-cta">
+          <a class="btn solid binge-btn" href="https://bingeapp.net" target="_blank" rel="noopener">
+            <i class="fa-solid fa-play"></i> sign up free <span class="arrow">→</span>
+          </a>
+          <a class="btn" href="https://bingeapp.net" target="_blank" rel="noopener">
+            bingeapp.net
+          </a>
+        </div>
+      </div>
+      <div class="binge-visual">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">
+              <span>9:41</span>
+              <span><i class="fa-solid fa-signal"></i> <i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></span>
+            </div>
+            <div class="phone-app">
+              <div class="phone-logo">B<span>.</span></div>
+              <div class="phone-prompt">
+                <div class="prompt-label">tell me your vibe</div>
+                <div class="prompt-input">"something <em>melancholy</em> but beautiful..."</div>
+              </div>
+              <div class="phone-results">
+                <div class="result-card r1"></div>
+                <div class="result-card r2"></div>
+                <div class="result-card r3"></div>
+              </div>
+              <div class="phone-thinking">
+                <span class="dot1"></span><span class="dot2"></span><span class="dot3"></span>
+                <span class="thinking-txt">analyzing 5 signals…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-tag t1">vibe match</div>
+        <div class="floating-tag t2">94% confidence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ============ BINGE ============ */
+  #binge { padding: 60px 0 80px; }
+  .binge-card {
+    position: relative;
+    border-radius: 32px;
+    border: 1px solid var(--border-2);
+    background: var(--bg-2);
+    padding: 70px 60px;
+    overflow: hidden;
+  }
+  .binge-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 60% at 0% 100%, rgba(255,78,205,0.18), transparent 60%),
+      radial-gradient(ellipse 60% 60% at 100% 0%, rgba(124,92,255,0.18), transparent 60%),
+      radial-gradient(ellipse 80% 50% at 50% 50%, rgba(0,212,255,0.06), transparent 70%);
+    pointer-events: none;
+  }
+  .binge-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    pointer-events: none;
+  }
+  .binge-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .binge-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 6px 14px;
+    border: 1px solid var(--border-2);
+    border-radius: 100px;
+    background: var(--card);
+    margin-bottom: 24px;
+  }
+  .binge-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent-3);
+    box-shadow: 0 0 10px var(--accent-3);
+    animation: pulse 2s infinite;
+  }
+  .binge-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(72px, 12vw, 140px);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #fff 0%, #ff4ecd 50%, #7c5cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .binge-dot-end {
+    background: linear-gradient(135deg, #00d4ff, #7c5cff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .binge-tag {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: clamp(20px, 2.4vw, 28px);
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+  .binge-desc {
+    font-size: 16px;
+    color: var(--text-dim);
+    line-height: 1.65;
+    max-width: 540px;
+    margin-bottom: 28px;
+  }
+  .binge-desc strong { color: var(--text); font-weight: 600; }
+  .binge-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 32px;
+  }
+  .binge-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 5px 11px;
+    border-radius: 100px;
+    background: rgba(255,78,205,0.08);
+    color: #ffb6e5;
+    border: 1px solid rgba(255,78,205,0.2);
+  }
+  .binge-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .binge-btn::before {
+    background: linear-gradient(135deg, #ff4ecd, #7c5cff) !important;
+    opacity: 1 !important;
+  }
+  .binge-btn {
+    background: linear-gradient(135deg, #ff4ecd, #7c5cff) !important;
+    color: white !important;
+    border-color: transparent !important;
+    box-shadow: 0 10px 40px rgba(255,78,205,0.35);
+  }
+  .binge-btn:hover { box-shadow: 0 14px 50px rgba(255,78,205,0.5); }
+
+  /* Phone mockup */
+  .binge-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 540px;
+  }
+  .phone {
+    position: relative;
+    width: 280px;
+    height: 560px;
+    background: linear-gradient(145deg, #1a1a24, #0a0a10);
+    border-radius: 44px;
+    border: 8px solid #1a1a22;
+    box-shadow:
+      0 40px 80px rgba(0,0,0,0.6),
+      0 0 80px rgba(124,92,255,0.25),
+      inset 0 0 0 1px rgba(255,255,255,0.05);
+    overflow: hidden;
+    transform: rotate(-4deg);
+    transition: transform .6s cubic-bezier(.2,.8,.2,1);
+  }
+  .phone:hover { transform: rotate(0deg) scale(1.02); }
+  .phone-notch {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 90px; height: 24px;
+    background: #000;
+    border-radius: 0 0 14px 14px;
+    z-index: 3;
+  }
+  .phone-screen {
+    width: 100%; height: 100%;
+    background: linear-gradient(180deg, #0a0a14 0%, #1a0a1f 100%);
+    padding: 36px 18px 18px;
+    position: relative;
+  }
+  .phone-status {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text);
+    margin-bottom: 20px;
+    padding: 0 6px;
+  }
+  .phone-status span:last-child { display: flex; gap: 5px; font-size: 10px; }
+  .phone-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff4ecd, #7c5cff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: -0.04em;
+  }
+  .phone-logo span { color: var(--accent-2); -webkit-text-fill-color: var(--accent-2); }
+  .phone-prompt {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+  .prompt-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+  }
+  .prompt-input {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .prompt-input em {
+    font-family: 'Instrument Serif', serif;
+    color: var(--accent-3);
+    font-style: italic;
+  }
+  .phone-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .result-card {
+    aspect-ratio: 2/3;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2a1a3a, #1a1a2a);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .result-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  .result-card.r1 { background: linear-gradient(135deg, #ff4ecd, #7c5cff); }
+  .result-card.r2 { background: linear-gradient(135deg, #00d4ff, #7c5cff); }
+  .result-card.r3 { background: linear-gradient(135deg, #fbbf24, #ff4ecd); }
+  @keyframes shimmer {
+    0%, 100% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+  }
+  .phone-thinking {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: rgba(124,92,255,0.1);
+    border: 1px solid rgba(124,92,255,0.2);
+    border-radius: 100px;
+  }
+  .phone-thinking .dot1, .phone-thinking .dot2, .phone-thinking .dot3 {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: bouncing 1.4s ease-in-out infinite;
+  }
+  .phone-thinking .dot2 { animation-delay: 0.2s; }
+  .phone-thinking .dot3 { animation-delay: 0.4s; }
+  @keyframes bouncing {
+    0%, 100% { transform: translateY(0); opacity: 0.4; }
+    50% { transform: translateY(-4px); opacity: 1; }
+  }
+  .thinking-txt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-left: 4px;
+  }
+
+  .floating-tag {
+    position: absolute;
+    padding: 8px 14px;
+    background: var(--bg-3);
+    border: 1px solid var(--border-2);
+    border-radius: 100px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    animation: floaty 4s ease-in-out infinite;
+  }
+  .floating-tag.t1 {
+    top: 8%; left: -6%;
+    color: var(--accent-3);
+    border-color: rgba(255,78,205,0.3);
+  }
+  .floating-tag.t2 {
+    bottom: 12%; right: -4%;
+    color: var(--green);
+    border-color: rgba(45,212,191,0.3);
+    animation-delay: -2s;
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @media (max-width: 900px) {
+    .binge-card { padding: 50px 28px; }
+    .binge-grid { grid-template-columns: 1fr; gap: 40px; }
+    .binge-visual { min-height: 480px; }
+    .phone { width: 240px; height: 480px; }
+    .floating-tag.t1 { left: 5%; }
+    .floating-tag.t2 { right: 5%; }
+  }
+</style>
 
 <!-- EXPERIENCE -->
 <section id="work" class="container reveal">
