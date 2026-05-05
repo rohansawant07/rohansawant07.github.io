@@ -1786,10 +1786,179 @@
   </div>
 </section>
 
+<!-- WRITING / POSTS -->
+<section id="writing" class="container reveal">
+  <div class="sec-head">
+    <div class="sec-eyebrow">06 — writing</div>
+    <h2 class="sec-title">Recent posts from <em>LinkedIn</em>.</h2>
+  </div>
+  <div class="posts-grid">
+
+    <!-- ===== POST 1 — EDIT ME ===== -->
+    <a class="post-card" href="https://www.linkedin.com/in/rohansawant07/" target="_blank" rel="noopener">
+      <div class="post-meta">
+        <span class="post-date">Apr 2026</span>
+        <span class="post-topic">LLMs</span>
+      </div>
+      <h3 class="post-title">Replace this with your post title.</h3>
+      <p class="post-excerpt">A 2–3 line excerpt from the post — the hook that makes someone want to click through. Short, punchy, leaves them curious about the rest.</p>
+      <div class="post-foot">
+        <span class="post-link"><i class="fa-brands fa-linkedin"></i> Read on LinkedIn</span>
+        <span class="post-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- ===== POST 2 — EDIT ME ===== -->
+    <a class="post-card" href="https://www.linkedin.com/in/rohansawant07/" target="_blank" rel="noopener">
+      <div class="post-meta">
+        <span class="post-date">Mar 2026</span>
+        <span class="post-topic">RAG</span>
+      </div>
+      <h3 class="post-title">Replace this with your post title.</h3>
+      <p class="post-excerpt">Another 2–3 line teaser. The pattern: grab attention, hint at the insight, save the payoff for the click-through.</p>
+      <div class="post-foot">
+        <span class="post-link"><i class="fa-brands fa-linkedin"></i> Read on LinkedIn</span>
+        <span class="post-arrow">→</span>
+      </div>
+    </a>
+
+    <!-- ===== POST 3 — EDIT ME ===== -->
+    <a class="post-card" href="https://www.linkedin.com/in/rohansawant07/" target="_blank" rel="noopener">
+      <div class="post-meta">
+        <span class="post-date">Feb 2026</span>
+        <span class="post-topic">Data Eng</span>
+      </div>
+      <h3 class="post-title">Replace this with your post title.</h3>
+      <p class="post-excerpt">Another 2–3 line teaser. Keep it consistent in length so the cards visually align in the grid.</p>
+      <div class="post-foot">
+        <span class="post-link"><i class="fa-brands fa-linkedin"></i> Read on LinkedIn</span>
+        <span class="post-arrow">→</span>
+      </div>
+    </a>
+
+  </div>
+  <div class="posts-cta">
+    <a class="btn" href="https://www.linkedin.com/in/rohansawant07/" target="_blank" rel="noopener">
+      <i class="fa-brands fa-linkedin"></i> all posts on LinkedIn <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  /* ============ POSTS / WRITING ============ */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: all .35s cubic-bezier(.2,.8,.2,1);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .post-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #0a66c2, transparent);
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .post-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    background: var(--card-2);
+  }
+  .post-card:hover::before { opacity: 1; }
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .post-date { color: var(--text-muted); }
+  .post-topic {
+    color: #6cb4ff;
+    padding: 3px 10px;
+    border: 1px solid rgba(10,102,194,0.3);
+    border-radius: 100px;
+    background: rgba(10,102,194,0.1);
+    letter-spacing: 0.08em;
+    font-size: 10px;
+  }
+  .post-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 14px;
+    color: var(--text);
+    transition: color .25s;
+  }
+  .post-card:hover .post-title { color: var(--accent-2); }
+  .post-excerpt {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+  .post-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .post-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color .25s;
+  }
+  .post-link i { color: #0a66c2; }
+  .post-card:hover .post-link { color: var(--text); }
+  .post-arrow {
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    transition: all .3s;
+  }
+  .post-card:hover .post-arrow {
+    color: var(--accent-2);
+    transform: translateX(4px);
+  }
+  .posts-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  @media (max-width: 900px) {
+    .posts-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
 <!-- EDUCATION -->
 <section id="education" class="container reveal">
   <div class="sec-head">
-    <div class="sec-eyebrow">06 — education</div>
+    <div class="sec-eyebrow">07 — education</div>
     <h2 class="sec-title">Where I <em>learned</em>.</h2>
   </div>
   <div class="edu-grid">
@@ -1811,7 +1980,7 @@
 <!-- CONTACT -->
 <section id="contact" class="container reveal">
   <div class="contact-card">
-    <div class="eyebrow">// 07 — let's connect</div>
+    <div class="eyebrow">// 08 — let's connect</div>
     <h2>Got something <em>interesting</em>?<br>I'd love to hear it.</h2>
     <p>Always open to chats about LLMs, RAG architectures, ML infrastructure, or any genuinely interesting problem.</p>
     <a href="mailto:rohsaw404@gmail.com" class="email-big">rohsaw404@gmail.com →</a>
